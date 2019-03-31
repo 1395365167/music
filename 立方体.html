@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #body{
+        width: 200px;
+        height: 200px;
+        margin: 150px auto;
+        position: relative;
+        transform-style: preserve-3d ;
+        transform: rotateX(20deg) rotateY(20deg);
+        animation: move  5s  linear infinite;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        transform-style: preserve-3d ;
+       transform: rotateX(20deg) rotateY(20deg);
+    }
+    .box div{
+        width: 200px;
+        height: 200px;
+       position: absolute;
+        text-align: center;
+        line-height: 200px;
+    }
+    .top{
+        background: rgba(231, 66, 94, 0.8);
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .bottom{
+        background:rgba(78,231,0,0.8);
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    .front{
+        background: rgba(218, 76, 231, 0.8);
+        transform:  translateZ(100px);
+    }
+    .back{
+        background: rgba(231, 227, 35, 0.8);
+        transform: rotateY(180deg) translateZ(100px);
+    }
+    .left{
+        background: rgba(42, 85, 231, 0.8);
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .right{
+        background: rgba(41, 175, 231, 0.8);
+        transform: rotateY(90deg) translateZ(100px)
+    }
+    .box1{
+        position: relative;
+        right: -60px;
+        top: -130px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        transform-style: preserve-3d ;
+       transform: rotateX(20deg) rotateY(20deg);
+    }
+    .box1 div{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+    }
+   .top1{
+        background: rgba(231, 66, 94, 0.8);
+        transform: rotateX(90deg) translateZ(50px);
+    }
+    .bottom1{
+        background:rgba(78,231,0,0.8);
+        transform: rotateX(-90deg) translateZ(50px);
+    }
+    .front1{
+        background: rgba(218, 76, 231, 0.8);
+        transform:  translateZ(50px);
+    }
+    .back1{
+        background: rgba(231, 227, 35, 0.8);
+        transform: rotateY(180deg) translateZ(50px);
+    }
+    .left1{
+        background: rgba(42, 85, 231, 0.8);
+        transform: rotateY(90deg) translateZ(50px);
+    }
+    .right1{
+        background: rgba(41, 175, 231, 0.8);
+        transform: rotateY(-90deg) translateZ(50px)
+    }
+
+    @keyframes move {
+        0%{
+            transform: rotateX(20deg) rotateY(20deg);
+        }
+        100%{
+            transform: rotateX(380deg) rotateY(380deg);
+        }
+    }
+    .box:hover div:nth-of-type(1){
+        transform: rotateX(90deg) translateZ(200px);
+    }
+    .box:hover div:nth-of-type(2){
+        transform: rotateX(-90deg) translateZ(200px);
+    }
+    .box:hover div:nth-of-type(3){
+        transform:  translateZ(200px);
+    }
+    .box:hover div:nth-of-type(4){
+        transform: rotateY(180deg) translateZ(200px);
+    }
+    .box:hover div:nth-of-type(5){
+        transform: rotateY(-90deg) translateZ(200px);
+    }
+    .box:hover div:nth-of-type(6){
+        transform: rotateY(90deg) translateZ(200px);
+    }
+</style>
+<body>
+<div id="body">
+
+    <div class="box">
+    <div class="top">上面</div>
+    <div class="bottom">下面</div>
+    <div class="front">前面</div>
+    <div class="back">后面</div>
+    <div class="left">左面</div>
+    <div class="right">右面</div>
+    </div>
+    <div class="box1">
+        <div class="top1">上面</div>
+        <div class="bottom1">下面</div>
+        <div class="front1">前面</div>
+        <div class="back1">后面</div>
+        <div class="left1">左面</div>
+        <div class="right1">右面</div>
+
+    </div>
+</div>
+</body>
+</html>
