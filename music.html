@@ -18,9 +18,13 @@
     .box{
         width: 500px;
         padding: 20px;
-        border: 1px solid #000;
+        border: 0px solid #000;
         margin: 50px auto;
-        background: url("image/r.jpeg") no-repeat ;
+        /*background: url("image/r.jpeg") no-repeat ;*/
+
+        /*background-position: center 0;*/
+        /*background-size: cover;*/
+        /*min-height: 100vh;*/
     }
     .ctr-box{
         width: 500px;
@@ -122,6 +126,7 @@
         width: 100%;
         padding: 30px;
         box-sizing: border-box;
+        color: red;
 
     }
     .list-box li{
@@ -135,15 +140,28 @@
    .active {
        background-color: #afff4f;
    }
-.p{
-position: absolute;
-    left: 50px;
-    top: 100px;
+body{
+    background: url("image/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    min-height: 100vh;
+
 }
+    h3{
+        position: absolute;
+        left: 750px;
+        color: #CC0099;
+    }
+    .q2{
+        position: relative;
+        left: 280px;
+        top: 20px;
+    }
 </style>
 
 <!--<p class="q2"><input type="text" id="search-menu"><button id="searchBtn">搜索</button></p>-->
-
+<h3>在线音乐</h3>
 <!--大盒子-->
 <div class="box">
     <p class="q2"><input type="text" id="search-menu"><button id="searchBtn">搜索</button></p>
@@ -304,6 +322,7 @@ position: absolute;
     function init() {
         // 初始化专辑封面，歌手歌曲名，播放路径，播放时间
         rotateDeg=0;
+        audio.src =' http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3  '
         // pic.src=data[index].pic;
         // audio.src = data[index].url;
         // str += '<li><span>'+data[i].name+'</span><span>';
@@ -324,7 +343,7 @@ position: absolute;
     function play(){
         pic.src=data[index].al.picUrl;
 
-        audio.src =' http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3  '
+
         // 播放音乐
         audio.play();
         // 点击播放按钮变暂停
@@ -426,16 +445,23 @@ position: absolute;
         function formatTime(time) {
            return time >9 ? time : '0'+time;
         }
-    // window.addEventListener('keydown',function (e) {
-    //     // 检测按下了那个键
-    //     if(e.keyCode === 32){
-    //         audio.pause();
-    //         strat.style.backgroundPositionX= 0+'px';
-    //     }else if(e.keyCode != 32){
-    //         play();
-    //         strat.style.backgroundPositionX= -30+'px';
-    //     }
-    // })
+    window.addEventListener('keydown',function (e) {
+        // 检测按下了那个键
+        if(e.keyCode === 32){
+            audio.pause();
+            strat.style.backgroundPositionX= 0+'px';
+        }else if(e.keyCode != 32){
+            play();
+            strat.style.backgroundPositionX= -30+'px';
+        }
+    })
+    $(searchMenu).on('keydown',function (e) {
+        if(e.keyCode ===13){
+
+            $(searchBtn).click();
+        }
+    });
+
 </script>
 </body>
 </html>
