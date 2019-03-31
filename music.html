@@ -135,13 +135,19 @@
    .active {
        background-color: #afff4f;
    }
-
+.p{
+position: absolute;
+    left: 50px;
+    top: 100px;
+}
 </style>
 
-<p class="q2"><input type="text" id="search-menu"><button id="searchBtn">搜索</button></p>
+<!--<p class="q2"><input type="text" id="search-menu"><button id="searchBtn">搜索</button></p>-->
 
 <!--大盒子-->
 <div class="box">
+    <p class="q2"><input type="text" id="search-menu"><button id="searchBtn">搜索</button></p>
+
     <!--控制组件盒子-->
     <div class="ctr-box">
         <!--专辑封面-->
@@ -235,7 +241,7 @@
                     str+='</span></li>'
                     listBox.innerHTML= str;
                     lis = document.querySelectorAll('li');
-                    lis[0].className = 'active';
+                    lis[i].className = 'active';
                 }
             },
             error:function (err) {
@@ -317,6 +323,8 @@
     // 播放
     function play(){
         pic.src=data[index].al.picUrl;
+
+        audio.src =' http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3  '
         // 播放音乐
         audio.play();
         // 点击播放按钮变暂停
@@ -407,7 +415,9 @@
          // 找到鼠标位置
          //  鼠标点击的对象的相对位置
          // 当前鼠标点击的位置/总长度*音乐时长=当前音乐需要播放的位置
-                audio.curTime=e.offsetX/ barBox.clientWidth*audio.duration;
+                audio.currentTime=e.offsetX/ barBox.clientWidth *audio.duration;
+                console.log(audio.curTime);
+
                 // sole.log(barBox.clientWidth);
             })
 
