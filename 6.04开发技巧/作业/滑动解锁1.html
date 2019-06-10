@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/patternLock.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url("image/bg1.png") 0px 0px no-repeat;
+        background-size: 100%;
+        text-align: center;
+    }
+
+    h1, h4 {
+        color: white;
+    }
+
+    .lock {
+        background: rgba(0, 0, 0, 0);
+        margin: 0 auto;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+<body>
+<div class="title">
+    <h1 class="time"></h1>
+    <h4 class="data"></h4>
+    <div class="lock"></div>
+</div>
+<script src="js/moment.min.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/zh-cn.min.js"></script>
+<script src="js/patternLock.zepto.js"></script>
+<script src="js/md5.min.js"></script>
+<script>
+    setInterval(function () {
+        $('.time').text(moment().format('HH:mm:ss '));
+        $('.data').text(moment().format('Do dddd '))
+    }, 1000);
+    var lock = new PatternLock('.lock', {
+        matrix: [3, 3],
+        lineOnMove: true,
+        onDraw: function (pattern) {
+            if (md5(pattern) == "4973593666ec027e03b28b0cbe18cf7a") {
+                console.log('解锁成功');
+                window.location.href = 'http://localhost:63342/D/%E5%85%A8%E6%A0%88%E4%B8%8A%E8%AF%BE%E7%BB%83%E4%B9%A0/6.03zeptol%E7%BB%83%E4%B9%A0/%E4%BD%9C%E4%B8%9A%E5%8F%8A%E7%BB%83%E4%B9%A0/%E6%BB%91%E5%8A%A8%E8%A7%A3%E9%94%81.html?_ijt=3l9lnneqigj16oiat5f8eth4ps';
+            } else {
+                $('.patt-lines').css('background', 'rgba(222,9,9,0.7)');
+                setTimeout(() => {
+                    lock.reset();
+                }, 1000)
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
