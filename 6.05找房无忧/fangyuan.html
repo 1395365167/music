@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    input {
+        outline: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #666666;
+    }
+
+    html {
+        font-size: 100px;
+    }
+
+    body {
+        background: #f5f5f5;
+        font-size: 0.12rem;
+
+    }
+
+
+    header {
+        height: 0.42rem;
+        background: #ff8a00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 0;
+    }
+
+    header h1 img {
+        width: 1rem;
+        height: 0.34rem;
+    }
+
+    header .icon {
+        font-size: 0;
+    }
+
+    header .icon img {
+        width: 0.23rem;
+        height: 0.29rem;
+        margin-left: 0.2rem;
+    }
+
+    .copyright {
+        background: #2f3130;
+        color: #939494;
+        padding: 0 0.15rem;
+    }
+
+    .copyright h2 {
+        font-size: 0.14rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #3e403f;
+    }
+
+    .copyright .content {
+        padding: 0.15rem 0;
+    }
+
+    .copyright ul {
+        display: flex;
+    }
+
+    .copyright li {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-items: center;
+    }
+
+    .copyright li img {
+        width: 0.18rem;
+        height: 0.21rem;
+        margin-right: 0.16rem;
+        margin-left: 0.1rem;
+    }
+
+    .copyright .text {
+        margin-top: 0.16rem;
+    }
+
+    .copyright p {
+        font-size: 0.12rem;
+    }
+
+    .copyright .text p {
+        line-height: 0.18rem;
+        text-align: center;
+
+    }
+
+
+    .rentalAddr {
+        height: 0.36rem;
+        line-height: 0.36rem;
+        background: #ffffff;
+        border-bottom: 1px solid #c5c5c5;
+        padding-left: 0.15rem;
+    }
+
+    .retalCont1 {
+        line-height: 0.2rem;
+        overflow: hidden;
+        margin-top: 0.1rem;
+
+    }
+
+    .retalCont1 span {
+        color: #6da719;
+        float: left;
+        padding: 0 0.05rem;
+        border: 1px solid #6da719;
+        border-radius: 2px;
+    }
+
+    .retalCont1 strong {
+        float: right;
+    }
+
+    /*租房详情页开始*/
+    .rentalpart1 {
+
+    }
+
+    .rentalpart1 .banner {
+        position: relative;
+
+    }
+
+    .rentalpart1 .banner .img {
+        width: 3.2rem;
+        height: 1.85rem;
+        /*vertical-align: top;*/
+        /*overflow: hidden;*/
+    }
+
+    .rentalpart1 .share {
+        position: absolute;
+        bottom: 0.1rem;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        width: 0.59rem;
+        height: 0.41rem;
+        color: #ffffff;
+        text-align: center;
+        line-height: 0.41rem;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .mianText {
+        height: 0.7rem;
+        background: #f9f9f9;
+        display: flex;
+    }
+
+    .mianText h2 {
+        flex: 78;
+        line-height: 0.21rem;
+        margin-left: 0.15rem;
+        padding-top: 0.14rem;
+
+    }
+
+    .mianText a {
+        flex: 22;
+        border-left: 1px solid #dcdcdc;
+        text-align: center;
+        background: url("image/rentalList/xin.png") 0.26rem 0.17rem no-repeat;
+        background-size: 0.19rem 0.19rem;
+        padding-top: 0.38rem;
+    }
+
+    .houseMes1 {
+        display: flex;
+        padding: 0.3rem 0;
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .houseMes1 li {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #e2e2e2;
+    }
+
+    .houseMes1 li div:nth-of-type(2) {
+        color: #ff8a00;
+        margin-top: 0.06rem;
+    }
+
+    .houseMes2 {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0 0.2rem;
+    }
+
+    .houseMes2 li {
+        height: 0.5rem;
+        line-height: 0.5rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .houseMes2 li div {
+        display: inline-block;
+        width: 48%;
+    }
+
+    .public {
+        margin: 0.09rem;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+    }
+
+    .public h2 {
+        height: 0.44rem;
+        line-height: 0.44rem;
+        color: #ff8a00;
+        background: url("image/rentalList/right.png") 2.8rem center no-repeat;
+        background-size: 0.07rem 0.14rem;
+        padding: 0 0.16rem;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .public p {
+        padding: 0.1rem;
+        line-height: 0.2rem;
+    }
+
+    .rentalpart4 div {
+        width: 2.8rem;
+        border: 1px solid #dcdcdc;
+        margin: 0.1rem auto;
+    }
+
+    .rentalpart4 h3 {
+        height: 0.32rem;
+        line-height: 0.32rem;
+        padding-left: 0.03rem;
+    }
+
+    .rentalpart4 div img {
+        width: 100%;
+    }
+
+    .rentalpart5 p span {
+        color: #de6843;
+    }
+
+    .rentalpart6 {
+        background: #ffffff;
+        display: flex;
+        height: 0.57rem;
+    }
+
+    .rentalpart6 .man {
+        display: flex;
+        flex: 63;
+        padding: 0.09rem;
+    }
+
+    .rentalpart6 .man img {
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-right: 0.09rem;
+    }
+
+    .rentalpart6 .man p {
+
+    }
+
+    .rentalpart6 .phone {
+        flex: 37;
+        display: flex;
+        margin-top: 0.05rem;
+    }
+
+    .rentalpart6 .phone a {
+        display: inline-block;
+        flex: 1;
+        padding-top: 0.3rem;
+    }
+
+    .rentalpart6 .phone a:first-of-type {
+        color: #5dcb96;
+        background: url("image/rentalList/icon1.png") 0 0 no-repeat;
+        background-size: 0.3rem 0.3rem;
+    }
+
+    .rentalpart6 .phone a:last-of-type {
+        color: #5baede;
+        background: url("image/rentalList/icon2.png") 0 0 no-repeat;
+        background-size: 0.3rem 0.3rem;
+
+    }
+
+
+    .secondSearch {
+        width: 2.9rem;
+        margin: 0.1rem auto;
+        position: relative;
+    }
+
+    .secondSearch input {
+        width: 2.9rem;
+        height: 0.41rem;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #cccccc;
+        padding-left: 0.1rem;
+        font-size: 0.12rem;
+    }
+
+    .secondSearch span {
+        position: absolute;
+        top: 0.12rem;
+        right: 0.5rem;
+
+    }
+
+    .secondSearch a {
+        position: absolute;
+        top: 0.12rem;
+        right: 0.18rem;
+    }
+
+    .secondSearch a img {
+        width: 0.18rem;
+        height: 0.2rem;
+    }
+
+    .secondList {
+
+    }
+
+    .secondList .list {
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.12rem;
+        z-index: 4;
+        position: relative;
+        background: #FFF;
+        /*/!*点击区域或价格等时候通过JavaScript改变定位方式就可以让导航排在最上方*!/*/
+        /*position: fixed;*/
+        /*top: 0;*/
+        /*left: 0;*/
+    }
+
+    .secondList .list li {
+        position: relative;
+    }
+
+    .secondList .list h2 a {
+        position: relative;
+    }
+
+    /*制作三角形箭头*/
+    .secondList .list h2 span {
+        border-top: 5px solid #ccc;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        position: absolute;
+        top: 0.06rem;
+        right: -0.14rem;
+    }
+
+    /*添加active类名就可以改变小箭头的方向和颜色*/
+    .secondList .list h2 .active span {
+        border-top: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #ff8a00;
+        border-left: 5px solid transparent;
+        top: 0.02rem;
+    }
+
+    .secondList .list h2 .active {
+        color: #ff8a00;
+    }
+
+    /*遮罩层*/
+    .hide {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: none;
+    }
+
+    .someList {
+        width: 100%;
+        position: fixed;
+        top: 0.4rem;
+        left: 0;
+        z-index: 10;
+    }
+
+    .area {
+        display: flex;
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        font-size: 0.12rem;
+
+        display: none;
+    }
+
+    .area .title {
+        flex: 1;
+        background: #f0f0f0;
+        border-right: 1px solid #cccccc;
+        font-size: 0.12rem;
+        text-align: center;
+    }
+
+    .area .title h2 {
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+    .area .title .active {
+        color: #ff8a00;
+        background: #fff;
+        margin-right: -1px;
+        border-right: 2px solid #fff;;
+    }
+
+    .area .hideList {
+        flex: 3;
+    }
+
+    .area .hideList ul li {
+        float: left;
+        width: 45%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+
+        box-sizing: border-box;
+
+    }
+
+    .area .hideList ul li .active {
+        color: #ff8a00;
+    }
+
+    .price {
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        font-size: 0.12rem;
+        display: none;
+    }
+
+    .price li {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #ccc;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    .price li:last-of-type {
+        border-bottom: none;
+    }
+
+    .house {
+        background: #fff;
+        padding-bottom: 0.2rem;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        font-size: 0.12rem;
+        display: none;
+    }
+
+    .house li {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #ccc;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    .house li:last-of-type {
+        border-bottom: none;
+    }
+
+    .house span {
+        width: 0.14rem;
+        height: 0.15rem;
+        float: right;
+        margin-top: 0.12rem;
+        margin-right: 0.2rem;
+        border: 1px solid #c5c3c3;
+    }
+
+    .house span.active {
+        border: 1px solid #ff8a00;
+        background: url("image/SecondHandList/ok.png") center center no-repeat;
+
+    }
+
+    .house .btnOK {
+        text-align: center;
+        background: #ff8a00;
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+    }
+
+    .more {
+        background: #fff;
+        width: 100%;
+        padding: 0 0.2rem 0.2rem;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        font-size: 0.12rem;
+        display: none;
+    }
+
+    .more h3 {
+        padding: 0.2rem 0 0.12rem 0;
+        font-size: 0.14rem;
+    }
+
+    .more .childList {
+        /*display: flex;*/
+        /*justify-content: space-around;*/
+        /*flex-flow: wrap;*/
+        padding-bottom: 0.08rem;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+
+
+    }
+
+    .more .childList li {
+        float: left;
+        /*flex: 1;*/
+        width: 22%;
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
+        border: 1px solid #cccccc;
+        text-align: center;
+        margin-left: 0.05rem;
+        margin-bottom: 0.12rem;
+        height: 0.25rem;
+        line-height: 0.25rem;
+        font-size: 0.1rem;
+
+
+    }
+
+    .more .childList li:first-of-type, .more .childList li:nth-of-type(5), .more .childList li:nth-of-type(9) {
+        margin-left: 0;
+    }
+
+    .more .clear {
+        height: 0.5rem;
+        line-height: 0.5rem;
+        text-align: center;
+    }
+
+    .more .btnOK {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        background: #ff8a00;
+    }
+
+    .more .btnOK a {
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .secondContent {
+        padding: 0 0.2rem;
+        font-size: 0.12rem;
+    }
+
+    .secondContent li {
+        padding: 0.2rem 0;
+        border-bottom: 1px solid #ff8a00;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .secondContent li:last-of-type {
+        border-bottom: none;
+    }
+
+    .secondContent .left img {
+        width: 0.81rem;
+        height: 0.81rem;
+    }
+
+    .secondContent .right {
+        width: 1.87rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+    }
+
+    .secondContent .right h2 {
+        font-size: 0.14rem;
+    }
+
+    .secondContent .right p {
+        color: #b0b0b0;
+        line-height: 0.21rem;
+    }
+
+    .secondContent .right p:first-of-type {
+        color: #000;
+        margin-top: 0.1rem;
+    }
+
+    .secondContent .right strong {
+        color: #ff8a00;
+    }
+
+
+</style>
+<body>
+<!--头部-->
+<header>
+    <h1><a href="#"><img src="image/index/logo.jpg" alt=""/></a></h1>
+    <div class="icon">
+        <a href="#"><img src="image/index/my.jpg" alt=""/></a>
+        <a href="#"><img src="image/index/xiazai.jpg" alt=""/></a>
+    </div>
+</header>
+<div class="rentalAddr">
+    <p><strong>首页</strong> > <span>北京租房</span></p>
+</div>
+<!--搜索-->
+<div class="secondSearch">
+    <input type="search"/>
+    <span>|</span>
+    <a href="#"><img src="image/secondhandlist/search_03.png" alt=""/></a>
+</div>
+<!--区域分类-->
+<div class="secondList">
+    <!--遮罩层-->
+    <div class="hide"></div>
+
+    <ul class="list">
+        <li>
+            <!--添加active类名就可以改变小箭头的方向和颜色-->
+            <h2><a href="#">区域<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">月租<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">房型<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">更多<span></span></a></h2>
+        </li>
+    </ul>
+    <ul class="someList">
+        <!--区域-->
+        <li class="area">
+            <div class="title">
+                <h2 class="active">区域</h2>
+                <h2>地铁</h2>
+            </div>
+            <div class="hideList">
+                <ul>
+                    <li><a href="#">附近</a></li>
+                    <li><a class="active" href="#">不限</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">不限</a></li>
+                    <li><a href="#">安贞</a></li>
+                    <li><a class="active" href="#">朝阳</a></li>
+                    <li><a href="#">奥林匹克公园</a></li>
+                    <li><a href="#">海淀</a></li>
+                    <li><a href="#">百子湾</a></li>
+                    <li><a href="#">昌平</a></li>
+                    <li><a href="#">北工大</a></li>
+                    <li><a href="#">丰台</a></li>
+                    <li><a href="#">北苑</a></li>
+                    <li><a href="#">石景山</a></li>
+                    <li><a href="#">CBD</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--价格-->
+        <li class="price">
+            <ul>
+                <li><a href="#">不限</a></li>
+                <li><a href="#">100万以下</a></li>
+                <li><a href="#">100万-150万</a></li>
+                <li><a href="#">150万-200万</a></li>
+                <li><a href="#">200万-250万</a></li>
+                <li><a href="#">250万-300万</a></li>
+                <li><a href="#">自定义价格</a></li>
+            </ul>
+        </li>
+        <!--房型-->
+        <li class="house">
+            <ul>
+                <li>不限</li>
+                <li>
+                    1室 <span></span>
+                </li>
+                <li>
+                    2室 <span></span>
+                </li>
+                <li>
+                    3室 <span class="active"></span>
+                </li>
+                <li>
+                    4室 <span></span>
+                </li>
+                <li>
+                    5室 <span></span>
+                </li>
+                <li><a class="btnOK" href="#">确定</a></li>
+            </ul>
+        </li>
+        <!--更多-->
+        <li class="more">
+            <ul>
+                <li>
+                    <h3>区域</h3>
+                    <ul class="childList">
+                        <li>南</li>
+                        <li>南北</li>
+                        <li>东</li>
+                        <li>西</li>
+                        <li>北</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>面积（平方）</h3>
+                    <ul class="childList">
+                        <li>50以下</li>
+                        <li>50-70</li>
+                        <li>70-90</li>
+                        <li>90-110</li>
+                        <li>110-130</li>
+                        <li>130-150</li>
+                        <li>150-200</li>
+                        <li>200以上</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>标签</h3>
+                    <ul class="childList">
+                        <li>学区房</li>
+                        <li>地铁房</li>
+                        <li>不限购</li>
+                        <li>满两年</li>
+                        <li>满五唯一</li>
+                        <li>降价</li>
+                        <li>新上</li>
+                        <li>独家</li>
+                        <li>有钥匙</li>
+                    </ul>
+                </li>
+
+
+                <li class="clear"><a href="#">清空条件</a></li>
+                <li class="btnOK"><a href="#">确定</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--房屋详细信息-->
+<div>
+    <ul class="secondContent">
+        <li>
+            <div class="left">
+                <img src="image/rentalList/img1.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>南沙滩小区 超低价急售</h2>
+                <p>2室1厅 96㎡ 南北</p>
+                <div>青岛新天地</div>
+                <div class="retalCont1"><span>集中供暖</span><strong>3700元/月</strong></div>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <img src="image/rentalList/img2.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>青年汇二期 免税三居</h2>
+                <p>3室2厅 129㎡ 南北</p>
+                <div>青年汇家园</div>
+                <div class="retalCont1"><span>集中供暖</span><strong>4610元/月</strong></div>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <img src="image/rentalList/img3.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>博雅德源稀缺两居 钥匙房源</h2>
+                <p>2室2厅 126m² 南北</p>
+                <div>西二旗</div>
+                <div class="retalCont1"><span>天然气供暖</span><strong>3420元/月</strong></div>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <img src="image/rentalList/img4.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>朝阳北路赠车库自住首选</h2>
+                <p>5室3厅 260m² 南北</p>
+                <div>武夷花园二手房</div>
+                <div class="retalCont1"><span>集中供暖</span><strong>5408元/月</strong></div>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <img src="image/rentalList/img5.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>金汉旭城 东南金角一居</h2>
+                <p>1室1厅 60m² 东南</p>
+                <div>鲁谷二手房</div>
+                <div class="retalCont1"><span>集中供暖</span><strong>3300元/月</strong></div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!--版权底部-->
+<footer class="copyright">
+    <h2>北京找房无忧 > 首页</h2>
+    <div class="content">
+        <ul>
+            <li>
+                <img src="image/index/apple.png" alt=""/>
+                <div>
+                    <p>iPhone</p>
+                    <p>客户端</p>
+                </div>
+            </li>
+            <li>
+                <img src="image/index/android.png" alt=""/>
+                <div>
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+            </li>
+        </ul>
+        <div class="text">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script>
+    var houseLi = $('.house li span');
+    houseLi.click(function () {
+        // console.log(houseLi)
+        $(this).toggleClass('active');
+
+
+        // console.log(this)
+    });
+    var $listLi = $('.list li');
+    var $someListLi = $('.someList > li');
+    $listLi.click(function () {
+//        alert(1)
+//        把导航条置于页面最顶端
+        $('.list').css({
+            'position': 'fixed',
+            'top': '0',
+            'left': '0'
+        });
+//        出现透明层蒙板
+        $('.hide').show();
+//        定义当前元素的下标
+        var index = $(this).index();
+//        给导航上的a元素切换上下箭头及字体颜色
+        $listLi.children('h2').children('a').removeClass('active');
+        $(this).children('h2').children('a').addClass('active');
+
+        $someListLi.hide();
+//        因为区域下面使用了flex布局，不能直接用display：none隐藏，所以需要判断
+        if (index === 0) {
+            $someListLi.eq(index).css('display', 'flex');
+        } else {
+            $someListLi.eq(index).show();
+        }
+//        阻止冒泡
+        return false;
+    });
+    //下面的代码是点击空白区域的时候模板层消失，弹出层消失
+    $someListLi.on('click', function () {
+        return false;
+    });
+
+    $('body').on('click', function () {
+        $('.list').css({
+            'position': ''
+        });
+        $('.hide').hide();
+        $listLi.children('h2').children('a').removeClass('active');
+        $someListLi.hide();
+    })
+
+</script>
+
+</body>
+</html>

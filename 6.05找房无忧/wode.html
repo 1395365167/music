@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    li{
+        list-style: none;
+    }
+    input{
+        outline: none;
+    }
+    a{
+        text-decoration: none;
+        color: #666666;
+    }
+
+    html {
+        font-size: 100px;
+    }
+    body{
+        background: #f5f5f5;
+        font-size: 0.12rem;
+
+    }
+
+
+    header {
+        height: 0.42rem;
+        background: #ff8a00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 0;
+    }
+
+    header h1 img {
+        width: 1rem;
+        height: 0.34rem;
+    }
+
+    header .icon {
+        font-size: 0;
+    }
+    header .icon img {
+        width: 0.23rem;
+        height: 0.29rem;
+        margin-left: 0.2rem;
+    }
+
+
+    .copyright h2{
+        font-size: 0.14rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #3e403f;
+    }
+    .copyright .content{
+        padding: 0.15rem 0;
+    }
+    .copyright ul{
+        display: flex;
+    }
+    .copyright li{
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-items: center;
+    }
+    .copyright li img{
+        width: 0.18rem;
+        height: 0.21rem;
+        margin-right: 0.16rem;
+        margin-left: 0.1rem;
+    }
+    .copyright .text{
+        margin-top: 0.16rem;
+    }
+    .copyright p{
+        font-size: 0.12rem;
+    }
+    .copyright .text p{
+        line-height: 0.18rem;
+        text-align: center;
+
+    }
+
+    body {
+        background: #f5f5f5;
+    }
+
+    .head {
+        outline: 1px solid red;
+        position: relative;
+    }
+
+    .head .bg {
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .downList {
+        position: absolute;
+        top: 0.12rem;
+        right: 0.16rem;
+
+    }
+
+    .downList a {
+        color: #ffffff;
+        margin-left: 0.2rem;
+        height: 0.32rem;
+        display: inline-block;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .downList a:first-of-type {
+        background: url("image/my/urse.png") center 0 no-repeat;
+        background-size: 0.14rem 0.15rem;
+    }
+
+    .downList a:last-of-type {
+        background: url("image/my/down.png") center 0 no-repeat;
+        background-size: 0.14rem 0.15rem;
+    }
+
+    .head .logo {
+        width: 0.53rem;
+        height: 0.53rem;
+        position: absolute;
+        left: 1.33rem;
+        top: 0.58rem;
+    }
+
+    .head .login {
+        position: absolute;
+        left: 1.23rem;
+        bottom: 0.29rem;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 0.06rem 0.2rem;
+    }
+
+    .userList {
+        margin-top: 0.12rem;
+        background: #ffffff;
+        padding: 0 0.2rem;
+    }
+
+    .userList li {
+        height: 0.48rem;
+        line-height: 0.48rem;
+        border-bottom: 1px solid #dcdcdc;
+        background: url("image/my/right.png") right center no-repeat;
+        background-size: 0.07rem 0.14rem;
+
+    }
+
+    .userList img {
+        width: 0.16rem;
+        height: 0.16rem;
+    }
+
+
+
+    .ueserLogin .ueser {
+        width: 0.54rem;
+        height: 0.54rem;
+        margin-left: 1.33rem;
+        margin-top: 0.18rem;
+    }
+
+    .ueserLogin p {
+        text-align: center;
+        margin-top: 0.28rem;
+        color: #ffffff;
+    }
+
+
+
+    .myLoginList li a {
+        display: block;
+        height: 0.43rem;
+        line-height: 0.43rem;
+        border-bottom: 1px solid #dcdcdc;
+        background: url("image/my/right.png") right center no-repeat;
+        background-size: 0.07rem 0.14rem;
+        margin-right: 0.24rem;
+        margin-left: 0.14rem;
+    }
+
+    .myLoginList li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .secondContent li {
+        padding: 0.2rem 0;
+        border-bottom: 1px solid #ff8a00;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .secondContent li:last-of-type {
+        border-bottom: none;
+    }
+
+    .secondContent .left img {
+        width: 0.81rem;
+        height: 0.81rem;
+    }
+
+    .secondContent .right {
+        width: 1.87rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+    }
+
+    .secondContent .right h2 {
+        font-size: 0.14rem;
+    }
+
+    .secondContent .right p {
+        color: #000;
+        line-height: 0.21rem;
+    }
+
+    .secondContent .right p:first-of-type {
+        margin-top: 0.05rem;
+    }
+
+    .secondContent .right strong {
+        color: #ff8a00;
+        margin-left: 0.18rem;
+    }
+
+</style>
+<body>
+<!--头部-->
+<div class="head">
+    <img class="bg" src="image/my/bg1.png" alt=""/>
+    <div class="downList">
+        <a href="#">我的</a>
+        <a href="#">APP</a>
+    </div>
+    <img class="logo" src="image/my/urse2.png" alt=""/>
+    <a class="login" href="#">登录</a>
+</div>
+
+<div class="userList">
+    <ul>
+        <li>
+            <img src="image/my/icon1.png" alt=""/>
+            <a href="#">我关注的房源</a>
+        </li>
+        <li>
+            <img src="image/my/icon2.png" alt=""/>
+            <a href="#">我关注的小区</a>
+        </li>
+        <li>
+            <img src="image/my/icon3.png" alt=""/>
+            <a href="#">我关注的新房</a>
+        </li>
+        <li>
+            <img src="image/my/icon4.png" alt=""/>
+            <a href="#">我的看房记录</a>
+        </li>
+    </ul>
+</div>
+<script src="js/rem.js"></script>
+</body>
+</html>
