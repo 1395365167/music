@@ -1,0 +1,1093 @@
+/*顶部*/
+.top {
+    padding: .1rem 0rem .18rem .13rem;
+    overflow: hidden;
+}
+
+.title-icon3 {
+    float: right;
+    margin-right: .35rem;
+}
+
+.title-icon2 {
+    width: 1.46rem;
+    float: right;
+    margin-right: .8rem;
+
+}
+
+.title-icon2 img {
+    width: 100%;
+}
+
+/*大图*/
+.banner {
+    width: 100%;
+}
+
+.banner-a {
+    width: 100%;
+    height: 0.19rem;
+    background: linear-gradient(#f0f0f0, #d9d9d9);
+}
+
+/*<!--项目列表-->*/
+.tem-list {
+    overflow: hidden;
+    padding: .13rem .28rem .02rem;
+}
+
+.tem-list li {
+    float: left;
+    width: 2.04rem;
+    height: .45rem;
+    margin-bottom: .13rem;
+    background: linear-gradient(#a5c513, #a5c513), linear-gradient(#ffff, #ffff);
+    border-radius: 0.08rem;
+    background-blend-mode: normal;
+    overflow: hidden;
+}
+
+.tem-list li img {
+    float: left;
+    margin-left: .45rem;
+    margin-top: .05rem;
+}
+
+.text {
+    float: left;
+    margin-top: .08rem;
+    margin-left: .08rem;
+}
+
+.text p {
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: .15rem;
+    letter-spacing: .012rem;
+    color: white;
+}
+
+.tem-list li:nth-child(2n+1) {
+    margin-right: .14rem;
+
+}
+
+/*<!--介绍列表-->*/
+.pic-list {
+    overflow: hidden;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: .26rem;
+    margin-bottom: .26rem;
+    width: 3.8rem;
+    height: 2rem;
+}
+
+.pic-list li {
+    float: left;
+    text-align: center;
+}
+
+.pic-list li:nth-of-type(2) {
+    padding-left: .34rem;
+}
+
+.pic-list li:nth-of-type(3) {
+    padding-left: .34rem;
+}
+
+.pic-list li:nth-of-type(4) {
+    padding-left: .164rem;
+}
+
+.pic-list li:nth-of-type(5) {
+    padding-top: .21rem;
+}
+
+.pic-list li:nth-of-type(6) {
+    padding-left: .34rem;
+    padding-top: .21rem;
+}
+
+.pic-list li:nth-of-type(7) {
+    padding-left: .34rem;
+    padding-top: .21rem;
+}
+
+.pic-list li:nth-of-type(8) {
+    padding-left: .34rem;
+    padding-top: .21rem;
+}
+
+.pic-list p {
+    margin-top: .07rem;
+
+    text-align: center;
+    font-size: 0.16rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.072rem;
+    letter-spacing: 0.013rem;
+    color: #626262;
+}
+
+.pic-a {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+
+}
+
+/*It训练营*/
+.it {
+    width: 4.8rem;
+    height: 1.38rem;
+    overflow: hidden;
+    padding-top: .26rem;
+}
+
+.it img {
+    float: left;
+    margin-right: .17rem;
+    margin-left: .29rem;
+}
+
+.it-text {
+    margin-left: .19rem;
+    float: left;
+
+}
+
+.it-text .q {
+
+
+    font-size: 0.149rem;
+
+}
+
+.it-text .w {
+
+    font-size: 0.149rem;
+
+}
+
+.it-text span {
+    color: #9fc105;
+    font-weight: bold;
+}
+
+.it-text .wen {
+    letter-spacing: .07rem;
+    font-size: 0.253rem;
+
+}
+
+.it-y {
+    float: right;
+    width: 0.68rem;
+    height: 0.6rem;
+    background-color: #ac92fe;
+    border-radius: 50%;
+    box-shadow: 0.02rem 0.035rem 0.11rem 0rem rgba(11, 2, 5, 0.27);
+    font-size: 0.21rem;
+    text-align: center;
+    padding-top: .1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.25rem;
+    letter-spacing: 0.017rem;
+    color: #ffffff;
+    margin-right: .29rem;
+}
+
+.pic-b {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    margin-top: -.27rem;
+}
+
+/*核心课程*/
+.kc {
+    width: 100%;
+    height: 2.89rem;
+
+    overflow: hidden;
+
+}
+
+.kc-text {
+    margin-top: .24rem;
+
+}
+
+.kc-text span:first-of-type {
+    margin-left: .36rem;
+
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.234rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.019rem;
+    color: #1a1a1a;
+}
+
+.kc-text span:last-of-type {
+    float: right;
+    margin-right: .24rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.156rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.072rem;
+    letter-spacing: 0.012rem;
+    color: #858585;
+}
+
+.kc .kc-list {
+
+    margin-top: .24rem;
+}
+
+.kc .kc-list li {
+
+    text-align: center;
+    float: left;
+}
+
+.kc .kc-list li:nth-of-type(1) {
+    margin-left: .39rem;
+}
+
+.kc .kc-list li:nth-of-type(2) {
+    margin-left: .16rem;
+}
+
+.kc .kc-list li:nth-of-type(3) {
+    margin-left: .2rem;
+}
+
+.kc .kc-list li:nth-of-type(4) {
+    margin-left: .2rem;
+}
+
+.kc .kc-list li:nth-of-type(5) {
+    margin-left: .2rem;
+
+}
+
+.kc .kc-list li:nth-of-type(6) {
+    margin-top: .26rem;
+    margin-left: .49rem;
+}
+
+.kc .kc-list li:nth-of-type(7) {
+    margin-left: .24rem;
+    margin-top: .26rem;
+}
+
+.kc .kc-list li:nth-of-type(8) {
+    margin-left: .2rem;
+    margin-top: .26rem;
+}
+
+.kc .kc-list li:nth-of-type(9) {
+    margin-left: .2rem;
+    margin-top: .26rem;
+}
+
+.kc .kc-list li:nth-of-type(10) {
+    margin-left: .2rem;
+    margin-top: .26rem;
+}
+
+.kc-list p {
+    margin-top: .08rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.2rem;
+    letter-spacing: 0rem;
+    color: #434343;
+}
+
+.kc-b {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    margin-top: .12rem;
+}
+
+/*学习视频*/
+.video-text {
+    margin-top: .29rem;
+    text-align: center;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.247rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.02rem;
+    color: #1a1a1a;
+}
+
+.video-text1 {
+    margin-top: .12rem;
+    text-align: center;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.012rem;
+    color: #1a1a1a;
+}
+
+.video input {
+    width: 2.32rem;
+    height: 0.5rem;
+    margin-top: .28rem;
+    margin-right: .2rem;
+    background-image: linear-gradient(
+            #ffffff,
+            #ffffff),
+    linear-gradient(
+            #ffffff,
+            #ffffff);
+    background-blend-mode: normal,
+    normal;
+    box-shadow: inset 0.01rem 0.017rem 0.11rem 0rem rgba(11, 2, 5, 0.23);
+    border-radius: .3rem;
+    font-family: SourceHanSansCN-Medium;
+    padding-left: .6rem;
+    font-size: 0.176rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.392rem;
+    letter-spacing: 0.011rem;
+    color: #f3c481;
+    opacity: 0.5;
+}
+
+.User {
+    position: relative;
+    left: .59rem;
+    top: -.06rem;
+    font-style: italic;
+    width: 0.27rem;
+    height: 0.28rem;
+    display: inline-block;
+    background: url("../image/people.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+
+.video button {
+    width: 1.07rem;
+    height: 0.46rem;
+    border-radius: .1rem;
+    background-image: linear-gradient(
+            #9fc105,
+            #9fc105),
+    linear-gradient(
+            #1b1b1b,
+            #1b1b1b);
+    background-blend-mode: normal,
+    normal;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.16rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.252rem;
+    letter-spacing: 0.032rem;
+    color: #ffffff;
+}
+
+.video-b {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    margin-top: .27rem;
+}
+
+/*精彩视频*/
+.jv-text {
+
+    overflow: hidden;
+    height: .5rem;
+    margin-bottom: .24rem;
+}
+
+.jv-text span:first-of-type {
+    float: left;
+    margin-top: .27rem;
+    margin-left: .35rem;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.234rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.019rem;
+    color: #1a1a1a;
+}
+
+.jv-text span:last-of-type {
+    float: right;
+    margin-top: .31rem;
+    margin-right: .51rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.156rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.072rem;
+    letter-spacing: 0.012rem;
+    color: #c0c0c0;
+}
+
+/*精彩视频*/
+.jv-btn .jv-btn1 {
+    width: 0.94rem;
+    height: 0.33rem;
+    background-image: linear-gradient(
+            #9fc105,
+            #9fc105),
+    linear-gradient(
+            #1b1b1b,
+            #1b1b1b);
+    background-blend-mode: normal,
+    normal;
+}
+
+.jv-btn {
+    margin-left: .7rem;
+    margin-right: .7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jv-btn button {
+    border-radius: .08rem;
+    width: 0.94rem;
+    height: 0.33rem;
+    border: solid 0.008rem #0d0d0d;
+    background-color: white;
+}
+
+.jv-video {
+    margin-top: .29rem;
+    margin-right: .44rem;
+    margin-left: .44rem;
+}
+
+.jv-video video {
+
+    width: 3.89rem;
+    height: 2.75rem;
+}
+
+.jv-videob {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    margin-top: .27rem;
+}
+
+/*师资团队*/
+.teacher-text {
+
+
+    overflow: hidden;
+    height: .5rem;
+    margin-bottom: .24rem;
+}
+
+.teacher-text span:first-of-type {
+    float: left;
+    margin-top: .27rem;
+    margin-left: .35rem;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.234rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.019rem;
+    color: #1a1a1a;
+}
+
+.teacher-text span:last-of-type {
+    float: right;
+    margin-top: .31rem;
+    margin-right: .51rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.156rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.072rem;
+    letter-spacing: 0.012rem;
+    color: #c0c0c0;
+}
+
+
+.teacher-btn .teacher-btn1 {
+    width: 0.94rem;
+    height: 0.33rem;
+    background-image: linear-gradient(
+            #9fc105,
+            #9fc105),
+    linear-gradient(
+            #1b1b1b,
+            #1b1b1b);
+    background-blend-mode: normal,
+    normal;
+}
+
+.teacher-btn {
+    margin-left: .37rem;
+    margin-right: .37rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-btn button {
+    border-radius: .08rem;
+    width: 0.94rem;
+    height: 0.33rem;
+    border: solid 0.008rem #0d0d0d;
+    background-color: white;
+}
+
+.tea {
+
+    overflow: hidden;
+
+}
+
+.tea-img {
+    text-align: center;
+    float: left;
+    margin-top: .23rem;
+    margin-left: .56rem;
+}
+
+.tea-img p:first-of-type {
+
+    font-family: SourceHanSansCN-Medium;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.272rem;
+    letter-spacing: 0.009rem;
+}
+
+.tea-img p:last-of-type {
+    width: 1.66rem;
+    height: 0.82rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.212rem;
+    letter-spacing: 0.009rem;
+    color: #1b1b1b;
+}
+
+.tea-a {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    position: relative;
+    bottom: -.27rem;
+}
+
+/*教学服务*/
+.tea-text {
+
+    margin-top: .29rem;
+    overflow: hidden;
+    height: .5rem;
+    margin-bottom: .24rem;
+}
+
+.tea-text span:first-of-type {
+    float: left;
+    margin-top: .27rem;
+    margin-left: .35rem;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.234rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.019rem;
+    color: #1a1a1a;
+}
+
+.tea-text span:last-of-type {
+    float: right;
+    margin-top: .31rem;
+    margin-right: .51rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.156rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.072rem;
+    letter-spacing: 0.012rem;
+    color: #c0c0c0;
+}
+
+
+.tea-btn .tea-btn1 {
+    width: 0.94rem;
+    height: 0.33rem;
+    background-image: linear-gradient(
+            #9fc105,
+            #9fc105),
+    linear-gradient(
+            #1b1b1b,
+            #1b1b1b);
+    background-blend-mode: normal,
+    normal;
+}
+
+.tea-btn {
+    margin-left: .37rem;
+    margin-right: .37rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tea-btn button {
+    border-radius: .08rem;
+    width: 0.94rem;
+    height: 0.33rem;
+    border: solid 0.008rem #0d0d0d;
+    background-color: white;
+}
+
+.tea-list {
+    margin-top: .28rem;
+    overflow: hidden;
+}
+
+.tea-list li {
+
+    float: left;
+}
+
+.tea-list li:first-of-type {
+    margin-left: .57rem;
+}
+
+.tea-list li:nth-of-type(2) {
+    margin-left: .29rem;
+}
+
+.tea-list li:nth-of-type(3) {
+    margin-left: .29rem;
+}
+
+.tea-list li:nth-of-type(4) {
+    margin-left: .29rem;
+}
+
+.tea-list p {
+    text-align: center;
+    width: 0.7rem;
+    height: 0.4rem;
+    margin-top: .11rem;
+    font-family: SourceHanSansCN-Medium;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.212rem;
+    letter-spacing: 0.009rem;
+}
+
+.tea-list-a {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    position: relative;
+    bottom: -.27rem;
+}
+
+/*品牌荣誉*/
+.pin-text {
+    margin-top: .29rem;
+    overflow: hidden;
+    height: .5rem;
+    margin-bottom: .24rem;
+}
+
+.pin-text span:first-of-type {
+    float: left;
+    margin-top: .27rem;
+    margin-left: .35rem;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.234rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.019rem;
+    color: #1a1a1a;
+}
+
+.pin-text span:last-of-type {
+    float: right;
+    margin-top: .31rem;
+    margin-right: .51rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.156rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.072rem;
+    letter-spacing: 0.012rem;
+    color: #c0c0c0;
+}
+
+.pin {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pin .pin-pic {
+    float: left;
+}
+
+.pin .pin-pic p {
+    width: 1.54rem;
+    height: 0.28rem;
+    margin-top: .18rem;
+    margin-bottom: .33rem;
+    text-align: center;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.115rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.012rem;
+    color: #1a1a1a;
+}
+
+.pin .pin-pic:nth-of-type(1n) {
+    margin-left: .57rem;
+}
+
+.pin .pin-pic:nth-of-type(2n) {
+    margin-left: .26rem;
+}
+
+.pin-d {
+    letter-spacing: .1rem;
+    font-size: .6rem;
+    text-align: center;
+    margin-top: -.36rem;
+}
+
+.pin-d span {
+    color: #9fc105;
+}
+
+/*常见咨询问题*/
+.pro {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.pro li {
+    display: flex;
+    float: left;
+
+}
+
+.pro li:first-of-type {
+    margin-left: .36rem;
+}
+
+.pro li:last-of-type {
+    margin-right: .36rem;
+}
+
+.pro li div {
+    width: 1.21rem;
+    height: 1.56rem;
+    text-align: center;
+    background: url("../image/problem-bg.png") no-repeat;
+}
+
+.pro li div img {
+    margin-top: .23rem;
+}
+
+.pro li div p {
+    margin-top: .02rem;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.202rem;
+    letter-spacing: 0.009rem;
+    color: white;
+}
+
+.pro-a {
+    margin-top: .3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.pro-a li {
+    text-align: center;
+    line-height: .35rem;
+    float: left;
+    width: 1.13rem;
+    height: 0.34rem;
+    background-image: linear-gradient(
+            #9fc105,
+            #9fc105),
+    linear-gradient(
+            #313131,
+            #313131);
+    background-blend-mode: normal,
+    normal;
+    border-radius: .1rem;
+}
+
+.pro-a li:first-of-type {
+    margin-left: .36rem;
+}
+
+.pro-a li:last-of-type {
+    margin-right: .36rem;
+}
+
+.pro-q {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #e7e7e7;
+    margin-top: .27rem;
+}
+
+/*<!--预约线下试听课-->*/
+
+.tp {
+    position: relative;
+    left: 3.9rem;
+    bottom: .29rem;
+}
+
+.lin p:first-of-type {
+    text-align: center;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.247rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.02rem;
+    color: #1a1a1a;
+    margin-top: .28rem;
+}
+
+.lin-text {
+
+    width: 3.28rem;
+    height: 0.46rem;
+    border-radius: 0.07rem;
+    border: solid 0.006rem #1b1b1b;
+    margin-left: .69rem;
+    margin-right: .66rem;
+    padding-left: .15rem;
+}
+
+.lin-u {
+
+    width: 2.22rem;
+    height: 0.46rem;
+    border-radius: 0.07rem;
+    border: solid 0.006rem #1b1b1b;
+    margin-left: .69rem;
+    margin-right: .66rem;
+    padding-left: 1.21rem;
+}
+
+.lin-p {
+
+    width: 2.22rem;
+    height: 0.46rem;
+    border-radius: 0.07rem;
+    border: solid 0.006rem #1b1b1b;
+    margin-left: .69rem;
+    margin-right: .66rem;
+    padding-left: 1.21rem;
+}
+
+.a {
+    text-align: center;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.012rem;
+    color: #1a1a1a;
+    margin-top: .09rem;
+    margin-bottom: .4rem;
+}
+
+.lin p:nth-of-type(3) img {
+    width: 0.27rem;
+    height: 0.28rem;
+    position: relative;
+    left: .91rem;
+    bottom: -.4rem;
+
+}
+
+.lin p:nth-of-type(4) img {
+    width: 0.20rem;
+    height: 0.28rem;
+    position: relative;
+    left: .91rem;
+    bottom: -.4rem;
+
+}
+
+.lin p:nth-of-type(5) {
+    text-align: center;
+    width: 2.95rem;
+    height: 0.54rem;
+    background-image: linear-gradient(
+            #707070,
+            #707070),
+    linear-gradient(
+            #9fc105,
+            #9fc105);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 0.08rem;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.16rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.5rem;
+    letter-spacing: 0.032rem;
+    color: #ffffff;
+    margin-left: .92rem;
+    margin-top: .32rem;
+}
+
+.lin p:nth-of-type(6) {
+    text-align: center;
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.153rem;
+    letter-spacing: 0.012rem;
+    color: #1a1a1a;
+    margin-top: .09rem;
+}
+
+/*底部*/
+
+.but {
+    margin-top: .27rem;
+    width: 100%;
+    height: .72rem;
+    background: url("../image/foot-bg.png") no-repeat;
+background-size: 100%;
+}
+
+.erji {
+    position: relative;
+    left: 2.12rem;
+    bottom: -.08rem;
+}
+
+.erji span {
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.202rem;
+    letter-spacing: 0.009rem;
+    color: #313131;
+    position: absolute;
+    bottom: -.2rem;
+    left: .11rem;
+
+}
+
+.but-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.but-list li {
+    float: left;
+}
+
+.but-list li:nth-of-type(1) {
+    margin-left: .56rem;
+}
+
+.but-list li:nth-of-type(2) {
+    margin-left: .45rem;
+}
+
+.but-list li:nth-of-type(3) {
+    margin-left: 1.37rem;
+}
+
+.but-list li:nth-of-type(4) {
+    margin-left: .42rem;
+}
+
+.but-list li img {
+    width: 0.3rem;
+    height: 0.31rem;
+}
+
+.but-list li p {
+    font-family: SourceHanSansCN-Light;
+    font-size: 0.15rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.202rem;
+    letter-spacing: 0.009rem;
+    color: #313131;
+}
+
+.but-q {
+    width: 100%;
+    height: .37rem;
+    background: linear-gradient(#ebeaea, #fdfdfd), linear-gradient(#ffffff, #ffffff);
+    margin-top: .4rem;
+}
+
+.swiper-pagination-custom {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-customs {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #000;
+    opacity: .3;
+    margin: 0 5px;
+}
+
+.swiper-pagination-customs-active {
+    opacity: 1;
+    background-color:#9fc105;
+}
